@@ -7,7 +7,7 @@ Reproduction of a `NullReferenceException` when using dotConnect for Oracle 9.14
 - change the connection string in `App.config` accordingly
 - run the program in debug mode
 - verify that only the log event _with_ an exception is logged correctly to the `LOGGING.APPLICATION_LOG` table
-- see the Exception in the debug output (it is catched and swallowed by log4net)
+- see the exception in the debug output (it is caught and swallowed by log4net)
 ```
 log4net:ERROR [AdoNetAppender] ErrorCode: GenericFailure. Exception while writing to database
 System.NullReferenceException: Object reference not set to an instance of an object.
